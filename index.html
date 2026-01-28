@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sécurité PC — Guide de base "Chamil"</title>
+
+  <!--  CSS EXTERNE -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--  CSS INTERNE   -->
+  <style>
+    nav ul{
+      list-style-type: none;   
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+      border-radius: 12px;
+    }
+    nav li{ float: left; }    
+    nav li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;    
+      font-weight: 700;
+    }
+    nav li a:hover{ background-color: #111111; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER  -->
+  <header class="site-header">
+    <img class="avatar" src="Vent de prairie.bmp" alt="" />
+
+    <h1 class="main-title">Comment protéger son PC — Sécurité de base</h1>
+
+    <!--  CSS INLINE  -->
+    <p class="subtitle" style="font-style: italic;">
+      Par <strong>Chamil</strong> — Menaces, bonnes pratiques, checklist et tableau récapitulatif.
+    </p>
+  </header>
+
+  <!--  NAV  -->
+  <nav class="site-nav" aria-label="Menu principal">
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#menaces">Menaces</a></li>
+      <li><a href="#protection">Bonnes pratiques</a></li>
+      <li><a href="#tableau">Tableau</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+
+  <!--  QR Code  -->
+  <aside id="qr-box">
+        <a href="https://Yasserchamil.github.io/" target="_blank" rel="noopener">
+      <img src="qrcode_yasserchamil.github.io.png" alt="" />
+    </a>
+    <p class="qr-text">Scanner pour ouvrir<br>le site en ligne</p>
+  </aside>
+
+  <!--  Bouton “Haut de page” flottant  -->
+  <a id="toTop" class="float-btn" href="#top" title="Haut de page">↑</a>
+
+  <!--  MAIN + ASIDE -->
+  <main class="layout">
+       <section class="content">
+
+      <section id="accueil" class="card">
+        <h2>Accueil</h2>
+        <article>
+          <p>
+            Ce guide résume les actions simples pour sécuriser un PC : éviter les virus, le phishing,
+            les ransomwares, et réduire les risques sur internet et via USB.
+          </p>
+
+          <div class="grid-3">
+            <div class="mini-card">
+              <h3>Règle 1</h3>
+              <p><b>Mettre à jour</b> le système et les logiciels.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Règle 2</h3>
+              <p><b>Mots de passe forts</b> + 2FA quand possible.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Règle 3</h3>
+              <p><b>Sauvegarde</b> (copie externe) contre pertes/ransomware.</p>
+            </div>
+          </div>
+
+
+        </article>
+      </section>
+
+      <section id="menaces" class="card">
+        <h2>Menaces courantes</h2>
+
+        <article class="block">
+          <h3>1) Malware (virus, trojans)</h3>
+          <p>Logiciels malveillants qui volent des données, affichent des pubs, ou contrôlent ton PC.</p>
+          <ul class="bullets">
+            <li>Origines : téléchargements douteux, cracks, pièces jointes.</li>
+            <li>Signes : PC lent, popups, navigateur modifié.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h3>2) Phishing (arnaque par mail/SMS)</h3>
+          <p>Faux message qui imite une banque/un site pour te faire donner mot de passe.</p>
+          <ul class="bullets">
+            <li>Indices : urgence (“compte bloqué”), lien bizarre, fautes.</li>
+            <li>Réflexe : ne clique pas → ouvre le site toi-même.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h3>3) Ransomware</h3>
+          <p>Chiffre tes fichiers puis demande une rançon.</p>
+          <ul class="bullets">
+            <li>Protection clé : sauvegardes + mises à jour + prudence emails.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h3>4) Réseaux Wi-Fi non sûrs</h3>
+          <p>Sur Wi-Fi public : risque d’interception si tu te connectes à de faux réseaux.</p>
+          <ul class="bullets">
+            <li>Évite les paiements sur Wi-Fi public si possible.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="protection" class="card">
+        <h2>Bonnes pratiques </h2>
+
+        <article class="block">
+          <h3>A) Mises à jour</h3>
+          <ul class="bullets">
+            <li>Activer mises à jour automatiques (Windows/macOS/Linux).</li>
+            <li>Mettre à jour navigateur + extensions.</li>
+            <li>Mettre à jour logiciels (PDF reader, Office, etc.).</li>
+          </ol>
+        </article>
+
+        <article class="block">
+          <h3>B) Mots de passe + 2FA</h3>
+          <ul class="bullets">
+            <li>1 compte = 1 mot de passe différent.</li>
+            <li>Utiliser une phrase longue (ex: 4 mots + symbole).</li>
+            <li>Activer la double authentification (2FA) quand disponible.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h3>C) Navigation / téléchargements</h3>
+          <ul class="bullets">
+            <li>Éviter cracks/logiciels piratés (source fréquente de malwares).</li>
+            <li>Télécharger depuis le site officiel.</li>
+            <li>Vérifier l’URL avant de saisir un mot de passe.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h3>D) Sauvegarde (anti-perte / anti-ransomware)</h3>
+          <ul class="bullets">
+            <li>Copie externe (disque dur/clé) débranchée après sauvegarde.</li>
+            <li>Copie cloud (option) pour documents importants.</li>
+            <li>Tester l’ouverture de quelques fichiers sauvegardés.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h3>E) Antivirus + pare-feu</h3>
+          <ul class="bullets">
+            <li>Activer pare-feu.</li>
+            <li>Faire un scan complet de temps en temps.</li>
+            <li>Ne pas installer 2 antivirus en même temps.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h3>F) Checklist rapide à suivre</h3>
+          <div class="checklist">
+            <label><input type="checkbox"> Mises à jour activées</label>
+            <label><input type="checkbox"> 2FA activée sur email</label>
+            <label><input type="checkbox"> Sauvegarde faite (copie externe)</label>
+            <label><input type="checkbox"> Pare-feu actif</label>
+            <label><input type="checkbox"> Pas de logiciels cracks</label>
+          </div>
+        </article>
+      </section>
+
+      <!--  TABLEAU  -->
+      <section id="tableau" class="card">
+        <h2>Tableau récapitulatif</h2>
+        <p>Actions recommandées (exemples) :</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Domaine</th>
+              <th>Risque</th>
+              <th>Exemple</th>
+              <th>Action</th>
+              <th>Fréquence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mises à jour</td>
+              <td>Failles</td>
+              <td>Navigateur ancien</td>
+              <td>Activer auto-update</td>
+              <td>Hebdo</td>
+            </tr>
+            <tr>
+              <td>Phishing</td>
+              <td>Vol de compte</td>
+              <td>Mail “urgent”</td>
+              <td>Vérifier l’URL</td>
+              <td>Chaque mail</td>
+            </tr>
+            <tr>
+              <td>Sauvegarde</td>
+              <td>Perte/rançon</td>
+              <td>Ransomware</td>
+              <td>Copie externe</td>
+              <td>Hebdo</td>
+            </tr>
+            <tr>
+              <td>Téléchargements</td>
+              <td>Malware</td>
+              <td>Cracks</td>
+              <td>Source officielle</td>
+              <td>À chaque install</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!--  CONTACT  -->
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Envoyer un e-mail :</p>
+
+        <a class="btn"
+           href="mailto:yasser.chamil@esi.ac.ma">
+          M’envoyer un e-mail
+        </a>
+
+
+      </section>
+
+    </section>
+
+    <!--  ASIDE  -->
+    <aside class="sidebar card">
+      <h2>Mini résumé</h2>
+      <p>
+        1) Mettre à jour<br>
+        2) Mots de passe forts + 2FA<br>
+        3) Sauvegarder régulièrement<br>
+        4) Télécharger uniquement depuis sites officiels
+      </p>
+
+
+    </aside>
+  </main>
+
+  <!-- FOOTER  -->
+  <footer class="site-footer">
+    <p id="copyright">© Chamil</p>
+
+    <pre class="ascii">
+  _____ _                     _   _
+ / ____| |                   (_) | |
+| |    | |__   __ _ _ __ ___  _  | |
+| |    | '_ \ / _` | '_ ` _ \| | | |
+| |____| | | | (_| | | | | | | | | |
+ \_____|_| |_|\__,_|_| |_| |_|_| |_|
+    </pre>
+  </footer>
+
+</body>
+</html>
