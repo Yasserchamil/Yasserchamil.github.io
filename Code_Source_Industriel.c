@@ -3,10 +3,6 @@
  * MODULE DE SECURITE POUR ESSAIM DE MICRO DRONES
  * Detection de la paire de drones la plus proche en 3D
  * =============================================================================
- *
- * Objectif : remplacer la double boucle quadratique par une architecture
- * optimisee utilisant le tri, la recursivite et l arithmetique de pointeurs.
- *
  * Contraintes principales :
  *   - structure imposee : struct Drone avec id, x, y, z ;
  *   - allocation dynamique des drones dans un seul bloc contigu ;
@@ -552,8 +548,8 @@ static int construire_index(struct Drone *essaim, struct Drone **index_ptr, int 
  * ============================================================ */
 
 /**
- * Orchestre l allocation, l initialisation, le tri, la recherche,
- * l affichage du resultat et la liberation de la memoire.
+ * Orchestre l'allocation, l'initialisation, le tri, la recherche,
+ * l'affichage du resultat et la liberation de la memoire.
  */
 int main(void)
 {
